@@ -156,33 +156,67 @@
         </div>
     </section>
     <!-- ***** Features Big Item End ***** -->
+		 <!-- ***** YouTueb Stat Code Start***** -->
+		<script>
+							// Get Subscribers
+							function showCount() {
+							const youtubeKey =  'AIzaSyCXdYeoDe2oMR32Nb2dLZrfYNHQcKC8bMA';
+							const youtubeUser = 'UCb1YNam_PGyFiDFI0y0UCJw';
+							const subCount = document.getElementById('subCount');
+							const viewCount = document.getElementById('viewCount');
+							const videoCount = document.getElementById('videoCount');
+							
+							let getSubscribers = () => {
+								
+								fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${youtubeUser}&key=${youtubeKey}`)
+								.then(response => {
+									return response.json()
+								})
+								.then(data => {
+									console.log(data);
+									subCount.innerHTML = data["items"][0].statistics.subscriberCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");;
+									viewCount.innerHTML = data["items"][0].statistics.viewCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+									videoCount.innerHTML = data["items"][0].statistics.videoCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+								})
+							}
+							
+							getSubscribers(); }
+							</script>
+		<!-- ***** YouTueb Stat End ***** -->
+		
     <!-- ***** Counter Parallax Start ***** -->
     <section class="counter">
         <div class="content">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="count-item decoration-bottom">
-                            <strong>6,250</strong>
-                            <span>Subscribers</span>
+						<div class="count-item decoration-top">
+  						<strong id="subCount"></strong>
+  						<span>Subscribers</span>
+							<script>showCount()</script>
+						</div>
+						
+						
+                    </div>
+                      <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="count-item decoration-top">
+                            <strong id="viewCount"></strong>
+                            <span>Views</span>
+							<script>showCount()</script>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="count-item decoration-top">
-                            <strong>325,000</strong>
-                            <span>Views</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="count-item decoration-bottom">
-                            <strong>265,000</strong>
-                            <span>Game Visits</span>
+                            <strong id="videoCount"></strong>
+                            <span>Videos</span>
+							<script>showCount()</script>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="count-item">
-                            <strong>1,750,000</strong>
-                            <span>Video Impressions</span>
+                            <strong>265,000</strong>
+                            <span>Game Visits</span>
+							<script>showCount()</script>
                         </div>
                     </div>
                 </div>
