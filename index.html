@@ -5,12 +5,12 @@
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="InScane's Official Website!">
-    <meta name="author" content="InScane">
+    <meta name="description" content="Official Website for Social Media Influencer and Actor InScane. Get the latest news, information, updates, and information about personal life here.">
+    <meta name="author" content="Michael West">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
 	<link href="/favicon.ico" rel="icon" type="image/x-icon" /> 
 
-    <title>InScane Official Website</title>
+    <title>InScanes Official Website</title>
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -74,6 +74,8 @@
                             <li><a href="#press">Press</a></li>
                             <li><a href="#socialmedia">Social Media</a></li>
                         </ul>
+						<!-- ***** Navigation Menu Scroll Text ***** -->
+						<marquee direction="left" height="37" width="1107" bgcolor="transparent">Welcome to the Official InScane Website! As the website is still in Development, expect bugs and more. -- BlackTangent Studios just surpassed 4,000+ Members and soon to surpass 300,000+ Game Plays!!</marquee>
                         <a class="menu-trigger">
                             <span>Menu</span>
                         </a>
@@ -93,9 +95,9 @@
             <div class="container">
                 <div class="row">
                     <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
-                        <h1>Hello, <strong>my</strong><br>name <strong>is InScane!</strong></h1>
+                        <h1>Hello, <strong>my</strong><br>name is<strong> InScane!</strong></h1>
                         <p>InScane is an Social Media Influencer, Actor, and Television Show Host. He love's entertaining the world and teaching the public new things and to prove that the harder you work, anything is possible.</p>
-                        <a href="#features" class="main-button-slider">Learn More!</a>
+                        <a href="#aboutme" class="main-button-slider">Learn More!</a>
                     </div>
                 </div>
             </div>
@@ -179,8 +181,8 @@
     <!-- ***** Features Big Item End ***** -->
 		 <!-- ***** YouTueb Stat Code Start***** -->
 		<script>
-							// Get Subscribers
-							function showCount() {
+			// Get Subscribers
+			   function showCount() {
 							const youtubeKey =  'AIzaSyCXdYeoDe2oMR32Nb2dLZrfYNHQcKC8bMA';
 							const youtubeUser = 'UCb1YNam_PGyFiDFI0y0UCJw';
 							const subCount = document.getElementById('subCount');
@@ -198,11 +200,14 @@
 									subCount.innerHTML = data["items"][0].statistics.subscriberCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");;
 									viewCount.innerHTML = data["items"][0].statistics.viewCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 									videoCount.innerHTML = data["items"][0].statistics.videoCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+									localStorage.setItem('subscriberCount', ++subscriberCount);
+									localStorage.setItem('viewCount', ++viewCount);
+									localStorage.setItem('videoCount', ++videoCount);
 								})
 							}
 							
 							getSubscribers(); }
-							</script>
+    	</script>
 		<!-- ***** YouTueb Stat End ***** -->
 		
     <!-- ***** Counter Parallax Start ***** -->
@@ -235,7 +240,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="count-item">
-                            <strong>270,000</strong>
+                            <strong>300,000</strong>
                             <span>Game Visits</span>
 							<script>showCount()</script>
                         </div>
@@ -277,14 +282,18 @@
 	<center> <a href="https://www.youtube.com/channel/UCWJNaFT-zH-f79A66PfoXFg?sub_confirmation=1" target="_blank" class="main-button">Subscribe</a> </center>
 	 </div>
   <div class="column"></div>
-	  
+	   <div class="rounded">
+    <a href="https://www.youtube.com/channel/UCOKMTPiJIzxe3Ul7dFAc0lQ" target="_blank"><img src="assets/avatars/shawnking.png" alt="KreekCraft" style="width:175px;height:175px;"></a>
+	<center>Shawn K The King</center><br>
+	<center> <a href="https://www.youtube.com/channel/UCOKMTPiJIzxe3Ul7dFAc0lQ?sub_confirmation=1" target="_blank" class="main-button">Subscribe</a> </center>
+	 </div>
   <div class="column"></div>
 	  
   <div class="column"></div>
 	  
   <div class="column"></div>
 				
-            </div>
+  </div>
     </section>
     <!-- ***** Pricing Plans Start ***** -->
     <section class="section colored" id="membership">
@@ -386,6 +395,41 @@
 
     <!-- ***** Counter Parallax End ***** -->   
 
+				<!-- ***** YouTube Featured Friends Start ***** -->
+    <section class="section colored" id="youtubevideocontent">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">YouTube Content</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <p>Over the years you have been supporting InScane on an everyday baisis. Check out these other creators and maybe drop them a sub?</p>
+                    </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+				
+		<section class="section colored" id="youtubecontent">		
+ 		 <div class="row">
+	  
+ 		   	 <div class="column"></div> 
+				 <iframe width="450" height="250" src="https://www.youtube.com/embed/videoseries?list=PLg0XLHWgQmRVPMrkEjiPLVN22Gu--NIw_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			 <div class="column"></div> 
+			 	<iframe width="450" height="250" src="https://www.youtube.com/embed/videoseries?list=PLg0XLHWgQmRXwpMQXIiD4PYOj2w4BQYIH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			 <div class="column"></div> 
+				 <iframe width="450" height="250" src="https://www.youtube.com/embed/videoseries?list=PLg0XLHWgQmRVxKurd_4ZgFzAtLCNpscC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			 <div class="column"></div> 
+				 <iframe width="450" height="250" src="https://www.youtube.com/embed/videoseries?list=PLg0XLHWgQmRUN5-eU-sgf6RG5zSX-iJa3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			 <div class="column"></div> 
+			 
+			 <div class="column"></div> 
+			 
+		  </div>
+		  </section>
+		  		
     <!-- ***** Blog Start ***** -->
     <section class="section" id="press">
         <div class="container">
@@ -514,6 +558,8 @@
                     <ul class="social">
                         <li><a href="https://facebook.com/InScaneYT" target="_blank"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="https://twitter.com/inscaneyt" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://instagram.com/inscaneyt" target="_blank"><i class="fa fa-instagram">
+						</i></a></li>
                         <li><a href="https://youtube.com/inscane" target="_blank"><i class="fa fa-youtube"></i></a></li>
                     </ul>
                 </div>
