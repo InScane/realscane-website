@@ -202,17 +202,21 @@
 									return response.json()
 								})
 								.then(data => {
-									console.log(data);
-									subCount.innerHTML = data["items"][0].statistics.subscriberCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");;
-									viewCount.innerHTML = data["items"][0].statistics.viewCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-									videoCount.innerHTML = data["items"][0].statistics.videoCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-									localStorage.setItem('subscriberCount', ++subscriberCount);
-									localStorage.setItem('viewCount', ++viewCount);
-									localStorage.setItem('videoCount', ++videoCount);
-								})
-							}
-							
-							getSubscribers(); }
+                                    const subCount = document.getElementById('subCount');
+                                    const viewCount = document.getElementById('viewCount');
+                                    const videoCount = document.getElementById('videoCount');
+                                    if (subCount && viewCount && videoCount) {
+                                        console.log(data);
+                                        subCount.innerHTML = data["items"][0].statistics.subscriberCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");;
+                                        viewCount.innerHTML = data["items"][0].statistics.viewCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                                        videoCount.innerHTML = data["items"][0].statistics.videoCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                                        localStorage.setItem('subscriberCount', ++subscriberCount);
+                                        localStorage.setItem('viewCount', ++viewCount);
+                                        localStorage.setItem('videoCount', ++videoCount);
+                                    } else {
+                                        console.log("Missing youtube data elements, statistics will not be written.")
+                                    }
+                                })
     	</script>
 		<!-- ***** YouTueb Stat End ***** -->
 		
