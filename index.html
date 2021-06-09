@@ -193,6 +193,8 @@
 							const youtubeKey =  'AIzaSyCXdYeoDe2oMR32Nb2dLZrfYNHQcKC8bMA';
 							const youtubeUser = 'UCb1YNam_PGyFiDFI0y0UCJw';
 							
+							let getSubscribers = () => {
+	
 								fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${youtubeUser}&key=${youtubeKey}`)
 								.then(response => {
 									return response.json()
