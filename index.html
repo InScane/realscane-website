@@ -192,12 +192,11 @@
 			   function showCount() {
 							const youtubeKey =  'AIzaSyCXdYeoDe2oMR32Nb2dLZrfYNHQcKC8bMA';
 							const youtubeUser = 'UCb1YNam_PGyFiDFI0y0UCJw';
-							const subCount = document.getElementById('subCount');
-							const viewCount = document.getElementById('viewCount');
-							const videoCount = document.getElementById('videoCount');
 							
 							let getSubscribers = () => {
-								
+								const subCount = document.getElementById('subCount');
+								const viewCount = document.getElementById('viewCount');
+								const videoCount = document.getElementById('videoCount');
 								fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${youtubeUser}&key=${youtubeKey}`)
 								.then(response => {
 									return response.json()
