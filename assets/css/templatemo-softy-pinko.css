@@ -678,6 +678,59 @@ welcome
   position: relative;
 }
 
+
+/* 
+---------------------------------------------
+Games
+--------------------------------------------- 
+*/
+.game-area {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/game-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
+  height: 100vh;
+}
+
+.game-area .header-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%);
+  text-align: center;
+  width: 100%;
+}
+
+.game-area .header-text h1 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  letter-spacing: 1.4px;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.game-area .header-text p {
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.boxed {
+	background-color: #FFFFFF;
+	border: #000000;
+	opacity: .9;
+	height: 115px;
+}
+
 @media (max-width: 991px) {
   .welcome-area .header-text {
     top: 65% !important;
