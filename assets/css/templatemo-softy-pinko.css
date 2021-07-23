@@ -638,6 +638,51 @@ header
 welcome
 --------------------------------------------- 
 */
+.films-area {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
+  height: 100vh;
+}
+
+.films-area .header-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%);
+  text-align: center;
+  width: 100%;
+}
+
+.films-area .header-text h1 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  letter-spacing: 1.4px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.films-area .header-text p {
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+
+/* 
+---------------------------------------------
+welcome
+--------------------------------------------- 
+*/
 .welcome-area {
   overflow: hidden;
   position: relative;
@@ -690,7 +735,6 @@ Games
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../images/game-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; 
@@ -1644,6 +1688,14 @@ preloader
   padding: 20px;
   background-color: #f44336; /* Red */
   color: white;
+  margin-bottom: 15px;
+}
+
+.alert-2 {
+  padding: 20px;
+  background-color: white; /* Red */
+  color: white;
+  text-emphasis-color: white;
   margin-bottom: 15px;
 }
 
