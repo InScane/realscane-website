@@ -1,0 +1,4 @@
+# realscane-website
+InScane's Official Website 
+
+(PLEASE DO NOT RE-USE AS ALL CONTENT IS COPYRIGHTED UNDER INSCANE MEDIA 2018-2022)
